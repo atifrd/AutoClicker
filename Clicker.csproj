@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{25E6EC5F-ED1A-47BA-9584-A49E738D5425}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Clicker</RootNamespace>
+    <AssemblyName>Clicker</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\ati_azar93\Desktop\clickerV2\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>73114BCEAE35AC5C5F9CCFB7BDE58BAC6916DE32</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Clicker_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>packages\EntityFramework.4.1.10715.0\lib\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsInput">
+      <HintPath>packages\InputSimulator.1.0.4.0\lib\net20\WindowsInput.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionEntry.cs" />
+    <Compile Include="BLLDate.cs" />
+    <Compile Include="ConfiguratinEntry.cs">
+      <DependentUpon>ConfiguratinEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSection\aspnet_Applications.cs">
+      <DependentUpon>clickerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSection\aspnet_Membership.cs">
+      <DependentUpon>clickerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSection\aspnet_Paths.cs">
+      <DependentUpon>clickerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSection\aspnet_PersonalizationAllUsers.cs">
+      <DependentUpon>clickerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSection\aspnet_PersonalizationPerUser.cs">
+      <DependentUpon>clickerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSection\aspnet_Profile.cs">
+      <DependentUpon>clickerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSection\aspnet_Roles.cs">
+      <DependentUpon>clickerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSection\aspnet_SchemaVersions.cs">
+      <DependentUpon>clickerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSection\aspnet_Users.cs">
+      <DependentUpon>clickerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSection\aspnet_WebEvent_Events.cs">
+      <DependentUpon>clickerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSection\BarCodeData.cs">
+      <DependentUpon>clickerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSection\BusseinessMethods.cs" />
+    <Compile Include="DataSection\clickerModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>clickerModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSection\clickerModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>clickerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSection\clickerModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>clickerModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DataSection\Employee.cs">
+      <DependentUpon>clickerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSection\FileClass.cs">
+      <DependentUpon>clickerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSection\FilesDirectory.cs">
+      <DependentUpon>clickerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSection\FilesINBarCode.cs">
+      <DependentUpon>clickerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSection\ImagesHistory.cs">
+      <DependentUpon>clickerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSection\Menu.cs">
+      <DependentUpon>clickerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSection\sysdiagram.cs">
+      <DependentUpon>clickerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSection\UserControl.cs">
+      <DependentUpon>clickerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSection\UserControlInRole.cs">
+      <DependentUpon>clickerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSection\UserTracking.cs">
+      <DependentUpon>clickerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EditWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditWin.Designer.cs">
+      <DependentUpon>EditWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatternInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setting_Reserve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting_Reserve.Designer.cs">
+      <DependentUpon>Setting_Reserve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UiUtility.cs" />
+    <EmbeddedResource Include="EditWin.resx">
+      <DependentUpon>EditWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Setting_Reserve.resx">
+      <DependentUpon>Setting_Reserve.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Clicker_TemporaryKey.pfx" />
+    <None Include="ConfiguratinEntry.xsd" />
+    <EntityDeploy Include="DataSection\clickerModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>clickerModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DataSection\clickerModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>clickerModel.edmx</DependentUpon>
+      <LastGenOutput>clickerModel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="DataSection\clickerModel.edmx.diagram">
+      <DependentUpon>clickerModel.edmx</DependentUpon>
+    </None>
+    <None Include="DataSection\clickerModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>clickerModel.edmx</DependentUpon>
+      <LastGenOutput>clickerModel.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ConfiguratinEntry.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="AutoClickDBModelStoreContainer" CdmEntityContainer="AutoClickDBEntities2">
+    <EntitySetMapping Name="aspnet_Applications">
+      <EntityTypeMapping TypeName="AutoClickDBModel.aspnet_Applications">
+        <MappingFragment StoreEntitySet="aspnet_Applications">
+          <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+          <ScalarProperty Name="LoweredApplicationName" ColumnName="LoweredApplicationName" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Membership">
+      <EntityTypeMapping TypeName="AutoClickDBModel.aspnet_Membership">
+        <MappingFragment StoreEntitySet="aspnet_Membership">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="PasswordFormat" ColumnName="PasswordFormat" />
+          <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+          <ScalarProperty Name="MobilePIN" ColumnName="MobilePIN" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LoweredEmail" ColumnName="LoweredEmail" />
+          <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+          <ScalarProperty Name="PasswordAnswer" ColumnName="PasswordAnswer" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+          <ScalarProperty Name="LastPasswordChangedDate" ColumnName="LastPasswordChangedDate" />
+          <ScalarProperty Name="LastLockoutDate" ColumnName="LastLockoutDate" />
+          <ScalarProperty Name="FailedPasswordAttemptCount" ColumnName="FailedPasswordAttemptCount" />
+          <ScalarProperty Name="FailedPasswordAttemptWindowStart" ColumnName="FailedPasswordAttemptWindowStart" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptCount" ColumnName="FailedPasswordAnswerAttemptCount" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptWindowStart" ColumnName="FailedPasswordAnswerAttemptWindowStart" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Paths">
+      <EntityTypeMapping TypeName="AutoClickDBModel.aspnet_Paths">
+        <MappingFragment StoreEntitySet="aspnet_Paths">
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="LoweredPath" ColumnName="LoweredPath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_PersonalizationAllUsers">
+      <EntityTypeMapping TypeName="AutoClickDBModel.aspnet_PersonalizationAllUsers">
+        <MappingFragment StoreEntitySet="aspnet_PersonalizationAllUsers">
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+          <ScalarProperty Name="PageSettings" ColumnName="PageSettings" />
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_PersonalizationPerUser">
+      <EntityTypeMapping TypeName="AutoClickDBModel.aspnet_PersonalizationPerUser">
+        <MappingFragment StoreEntitySet="aspnet_PersonalizationPerUser">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PageSettings" ColumnName="PageSettings" />
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Profile">
+      <EntityTypeMapping TypeName="AutoClickDBModel.aspnet_Profile">
+        <MappingFragment StoreEntitySet="aspnet_Profile">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="PropertyNames" ColumnName="PropertyNames" />
+          <ScalarProperty Name="PropertyValuesString" ColumnName="PropertyValuesString" />
+          <ScalarProperty Name="PropertyValuesBinary" ColumnName="PropertyValuesBinary" />
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Roles">
+      <EntityTypeMapping TypeName="AutoClickDBModel.aspnet_Roles">
+        <MappingFragment StoreEntitySet="aspnet_Roles">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="LoweredRoleName" ColumnName="LoweredRoleName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_SchemaVersions">
+      <EntityTypeMapping TypeName="AutoClickDBModel.aspnet_SchemaVersions">
+        <MappingFragment StoreEntitySet="aspnet_SchemaVersions">
+          <ScalarProperty Name="Feature" ColumnName="Feature" />
+          <ScalarProperty Name="CompatibleSchemaVersion" ColumnName="CompatibleSchemaVersion" />
+          <ScalarProperty Name="IsCurrentVersion" ColumnName="IsCurrentVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Users">
+      <EntityTypeMapping TypeName="AutoClickDBModel.aspnet_Users">
+        <MappingFragment StoreEntitySet="aspnet_Users">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="LoweredUserName" ColumnName="LoweredUserName" />
+          <ScalarProperty Name="MobileAlias" ColumnName="MobileAlias" />
+          <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_WebEvent_Events">
+      <EntityTypeMapping TypeName="AutoClickDBModel.aspnet_WebEvent_Events">
+        <MappingFragment StoreEntitySet="aspnet_WebEvent_Events">
+          <ScalarProperty Name="EventId" ColumnName="EventId" />
+          <ScalarProperty Name="EventTimeUtc" ColumnName="EventTimeUtc" />
+          <ScalarProperty Name="EventTime" ColumnName="EventTime" />
+          <ScalarProperty Name="EventType" ColumnName="EventType" />
+          <ScalarProperty Name="EventSequence" ColumnName="EventSequence" />
+          <ScalarProperty Name="EventOccurrence" ColumnName="EventOccurrence" />
+          <ScalarProperty Name="EventCode" ColumnName="EventCode" />
+          <ScalarProperty Name="EventDetailCode" ColumnName="EventDetailCode" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="ApplicationPath" ColumnName="ApplicationPath" />
+          <ScalarProperty Name="ApplicationVirtualPath" ColumnName="ApplicationVirtualPath" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="RequestUrl" ColumnName="RequestUrl" />
+          <ScalarProperty Name="ExceptionType" ColumnName="ExceptionType" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BarCodeDatas">
+      <EntityTypeMapping TypeName="AutoClickDBModel.BarCodeData">
+        <MappingFragment StoreEntitySet="BarCodeData">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="کلاسه" ColumnName="کلاسه" />
+          <ScalarProperty Name="کد_تفضیلی" ColumnName="کد تفضیلی" />
+          <ScalarProperty Name="نام_موقوفه" ColumnName="نام موقوفه" />
+          <ScalarProperty Name="PrintSts" ColumnName="PrintSts" />
+          <ScalarProperty Name="PrintDate" ColumnName="PrintDate" />
+          <ScalarProperty Name="Lock" ColumnName="Lock" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="AutoClickDBModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="PersoneCode" ColumnName="PersoneCode" />
+          <ScalarProperty Name="PersonName" ColumnName="PersonName" />
+          <ScalarProperty Name="PersonFamily" ColumnName="PersonFamily" />
+          <ScalarProperty Name="PersonPost" ColumnName="PersonPost" />
+          <ScalarProperty Name="AllowLockFiles" ColumnName="AllowLockFiles" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FileClasses">
+      <EntityTypeMapping TypeName="AutoClickDBModel.FileClass">
+        <MappingFragment StoreEntitySet="FileClasses">
+          <ScalarProperty Name="ClassID" ColumnName="ClassID" />
+          <ScalarProperty Name="FileClassNameEN" ColumnName="FileClassNameEN" />
+          <ScalarProperty Name="FileClassNameFa" ColumnName="FileClassNameFa" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FilesDirectories">
+      <EntityTypeMapping TypeName="AutoClickDBModel.FilesDirectory">
+        <MappingFragment StoreEntitySet="FilesDirectory">
+          <ScalarProperty Name="DiectoryId" ColumnName="DiectoryId" />
+          <ScalarProperty Name="SourceDirectory" ColumnName="SourceDirectory" />
+          <ScalarProperty Name="DestinationDirectory" ColumnName="DestinationDirectory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FilesINBarCodes">
+      <EntityTypeMapping TypeName="AutoClickDBModel.FilesINBarCode">
+        <MappingFragment StoreEntitySet="FilesINBarCode">
+          <ScalarProperty Name="FileId" ColumnName="FileId" />
+          <ScalarProperty Name="FileURL" ColumnName="FileURL" />
+          <ScalarProperty Name="Filename" ColumnName="Filename" />
+          <ScalarProperty Name="ClassificationDateTime" ColumnName="ClassificationDateTime" />
+          <ScalarProperty Name="UploadedDateTime" ColumnName="UploadedDateTime" />
+          <ScalarProperty Name="ErrorMessage" ColumnName="ErrorMessage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ImagesHistories">
+      <EntityTypeMapping TypeName="AutoClickDBModel.ImagesHistory">
+        <MappingFragment StoreEntitySet="ImagesHistory">
+          <ScalarProperty Name="HistoryId" ColumnName="HistoryId" />
+          <ScalarProperty Name="ClassificationDateTime" ColumnName="ClassificationDateTime" />
+          <ScalarProperty Name="SuccessfulUploadDateTime" ColumnName="SuccessfulUploadDateTime" />
+          <ScalarProperty Name="GlobalErrorInUploadDateTime" ColumnName="GlobalErrorInUploadDateTime" />
+          <ScalarProperty Name="GlobalErrorInUploadMessage" ColumnName="GlobalErrorInUploadMessage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menus">
+      <EntityTypeMapping TypeName="AutoClickDBModel.Menu">
+        <MappingFragment StoreEntitySet="Menu">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="AutoClickDBModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserControlInRoles">
+      <EntityTypeMapping TypeName="AutoClickDBModel.UserControlInRole">
+        <MappingFragment StoreEntitySet="UserControlInRole">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserControlId" ColumnName="UserControlId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserControls">
+      <EntityTypeMapping TypeName="AutoClickDBModel.UserControl">
+        <MappingFragment StoreEntitySet="UserControls">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserTrackings">
+      <EntityTypeMapping TypeName="AutoClickDBModel.UserTracking">
+        <MappingFragment StoreEntitySet="UserTracking">
+          <ScalarProperty Name="LogId" ColumnName="LogId" />
+          <ScalarProperty Name="LogDateTime" ColumnName="LogDateTime" />
+          <ScalarProperty Name="LogEventName" ColumnName="LogEventName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK__aspnet_Me__Appli__7F2BE32F" TypeName="AutoClickDBModel.FK__aspnet_Me__Appli__7F2BE32F" StoreEntitySet="aspnet_Membership">
+      <EndProperty Name="aspnet_Applications">
+        <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+      </EndProperty>
+      <EndProperty Name="aspnet_Membership">
+        <ScalarProperty Name="UserId" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK__aspnet_Pa__Appli__01142BA1" TypeName="AutoClickDBModel.FK__aspnet_Pa__Appli__01142BA1" StoreEntitySet="aspnet_Paths">
+      <EndProperty Name="aspnet_Applications">
+        <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+      </EndProperty>
+      <EndProperty Name="aspnet_Paths">
+        <ScalarProperty Name="PathId" ColumnName="PathId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK__aspnet_Ro__Appli__7D439ABD" TypeName="AutoClickDBModel.FK__aspnet_Ro__Appli__7D439ABD" StoreEntitySet="aspnet_Roles">
+      <EndProperty Name="aspnet_Applications">
+        <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+      </EndProperty>
+      <EndProperty Name="aspnet_Roles">
+        <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK__aspnet_Us__Appli__06CD04F7" TypeName="AutoClickDBModel.FK__aspnet_Us__Appli__06CD04F7" StoreEntitySet="aspnet_Users">
+      <EndProperty Name="aspnet_Applications">
+        <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+      </EndProperty>
+      <EndProperty Name="aspnet_Users">
+        <ScalarProperty Name="UserId" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK__aspnet_Me__UserI__00200768" TypeName="AutoClickDBModel.FK__aspnet_Me__UserI__00200768" StoreEntitySet="aspnet_Membership">
+      <EndProperty Name="aspnet_Users">
+        <ScalarProperty Name="UserId" ColumnName="UserId" />
+      </EndProperty>
+      <EndProperty Name="aspnet_Membership">
+        <ScalarProperty Name="UserId" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK__aspnet_Pe__PathI__02084FDA" TypeName="AutoClickDBModel.FK__aspnet_Pe__PathI__02084FDA" StoreEntitySet="aspnet_PersonalizationAllUsers">
+      <EndProperty Name="aspnet_Paths">
+        <ScalarProperty Name="PathId" ColumnName="PathId" />
+      </EndProperty>
+      <EndProperty Name="aspnet_PersonalizationAllUsers">
+        <ScalarProperty Name="PathId" ColumnName="PathId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK__aspnet_Pe__PathI__02FC7413" TypeName="AutoClickDBModel.FK__aspnet_Pe__PathI__02FC7413" StoreEntitySet="aspnet_PersonalizationPerUser">
+      <EndProperty Name="aspnet_Paths">
+        <ScalarProperty Name="PathId" ColumnName="PathId" />
+      </EndProperty>
+      <EndProperty Name="aspnet_PersonalizationPerUser">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="PathId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK__aspnet_Pe__UserI__03F0984C" TypeName="AutoClickDBModel.FK__aspnet_Pe__UserI__03F0984C" StoreEntitySet="aspnet_PersonalizationPerUser">
+      <EndProperty Name="aspnet_Users">
+        <ScalarProperty Name="UserId" ColumnName="UserId" />
+      </EndProperty>
+      <EndProperty Name="aspnet_PersonalizationPerUser">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="UserId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK__aspnet_Pr__UserI__04E4BC85" TypeName="AutoClickDBModel.FK__aspnet_Pr__UserI__04E4BC85" StoreEntitySet="aspnet_Profile">
+      <EndProperty Name="aspnet_Users">
+        <ScalarProperty Name="UserId" ColumnName="UserId" />
+      </EndProperty>
+      <EndProperty Name="aspnet_Profile">
+        <ScalarProperty Name="UserId" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_UserControlInRole_aspnet_Roles" TypeName="AutoClickDBModel.FK_UserControlInRole_aspnet_Roles" StoreEntitySet="UserControlInRole">
+      <EndProperty Name="aspnet_Roles">
+        <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+      </EndProperty>
+      <EndProperty Name="UserControlInRole">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Employee_aspnet_Users" TypeName="AutoClickDBModel.FK_Employee_aspnet_Users" StoreEntitySet="Employee">
+      <EndProperty Name="aspnet_Users">
+        <ScalarProperty Name="UserId" ColumnName="FkUserId" />
+      </EndProperty>
+      <EndProperty Name="Employee">
+        <ScalarProperty Name="PersoneCode" ColumnName="PersoneCode" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_UserTracking_aspnet_Users" TypeName="AutoClickDBModel.FK_UserTracking_aspnet_Users" StoreEntitySet="UserTracking">
+      <EndProperty Name="aspnet_Users">
+        <ScalarProperty Name="UserId" ColumnName="FkUserId" />
+      </EndProperty>
+      <EndProperty Name="UserTracking">
+        <ScalarProperty Name="LogId" ColumnName="LogId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_FilesINBarCode_BarCodeData" TypeName="AutoClickDBModel.FK_FilesINBarCode_BarCodeData" StoreEntitySet="FilesINBarCode">
+      <EndProperty Name="BarCodeData">
+        <ScalarProperty Name="کد_تفضیلی" ColumnName="FK_Barcode" />
+      </EndProperty>
+      <EndProperty Name="FilesINBarCode">
+        <ScalarProperty Name="FileId" ColumnName="FileId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_ImagesHistory_BarCodeData" TypeName="AutoClickDBModel.FK_ImagesHistory_BarCodeData" StoreEntitySet="ImagesHistory">
+      <EndProperty Name="BarCodeData">
+        <ScalarProperty Name="کد_تفضیلی" ColumnName="FK_barcode" />
+      </EndProperty>
+      <EndProperty Name="ImagesHistory">
+        <ScalarProperty Name="HistoryId" ColumnName="HistoryId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_FilesINBarCode_Employee" TypeName="AutoClickDBModel.FK_FilesINBarCode_Employee" StoreEntitySet="FilesINBarCode">
+      <EndProperty Name="Employee">
+        <ScalarProperty Name="PersoneCode" ColumnName="FK_PersonCodeClassification" />
+      </EndProperty>
+      <EndProperty Name="FilesINBarCode">
+        <ScalarProperty Name="FileId" ColumnName="FileId" />
+      </EndProperty>
+      <Condition ColumnName="FK_PersonCodeClassification" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_FilesINBarCode_FileClasses" TypeName="AutoClickDBModel.FK_FilesINBarCode_FileClasses" StoreEntitySet="FilesINBarCode">
+      <EndProperty Name="FileClasses">
+        <ScalarProperty Name="ClassID" ColumnName="FK_FileClass" />
+      </EndProperty>
+      <EndProperty Name="FilesINBarCode">
+        <ScalarProperty Name="FileId" ColumnName="FileId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Menu_Menu" TypeName="AutoClickDBModel.FK_Menu_Menu" StoreEntitySet="Menu">
+      <EndProperty Name="Menu">
+        <ScalarProperty Name="Id" ColumnName="ParentId" />
+      </EndProperty>
+      <EndProperty Name="Menu1">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="ParentId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Menu_UserControls" TypeName="AutoClickDBModel.FK_Menu_UserControls" StoreEntitySet="Menu">
+      <EndProperty Name="UserControls">
+        <ScalarProperty Name="Id" ColumnName="UserControlId" />
+      </EndProperty>
+      <EndProperty Name="Menu">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="UserControlId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="aspnet_UsersInRoles" TypeName="AutoClickDBModel.aspnet_UsersInRoles" StoreEntitySet="aspnet_UsersInRoles">
+      <EndProperty Name="aspnet_Roles">
+        <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+      </EndProperty>
+      <EndProperty Name="aspnet_Users">
+        <ScalarProperty Name="UserId" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

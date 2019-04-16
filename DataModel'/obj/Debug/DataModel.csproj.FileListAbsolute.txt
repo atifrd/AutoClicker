@@ -1,0 +1,10 @@
+F:\93\AutoDown_Oghaf\AutoDown\ClickerCode\Clicker\DataModel'\bin\Debug\DataModel'.dll.config
+F:\93\AutoDown_Oghaf\AutoDown\ClickerCode\Clicker\DataModel'\bin\Debug\DataModel'.dll
+F:\93\AutoDown_Oghaf\AutoDown\ClickerCode\Clicker\DataModel'\bin\Debug\DataModel'.pdb
+F:\93\AutoDown_Oghaf\AutoDown\ClickerCode\Clicker\DataModel'\bin\Debug\EntityFramework.dll
+F:\93\AutoDown_Oghaf\AutoDown\ClickerCode\Clicker\DataModel'\bin\Debug\EntityFramework.SqlServer.dll
+F:\93\AutoDown_Oghaf\AutoDown\ClickerCode\Clicker\DataModel'\bin\Debug\EntityFramework.xml
+F:\93\AutoDown_Oghaf\AutoDown\ClickerCode\Clicker\DataModel'\bin\Debug\EntityFramework.SqlServer.xml
+F:\93\AutoDown_Oghaf\AutoDown\ClickerCode\Clicker\DataModel'\obj\Debug\DataModel.csprojResolveAssemblyReference.cache
+F:\93\AutoDown_Oghaf\AutoDown\ClickerCode\Clicker\DataModel'\obj\Debug\DataModel'.dll
+F:\93\AutoDown_Oghaf\AutoDown\ClickerCode\Clicker\DataModel'\obj\Debug\DataModel'.pdb

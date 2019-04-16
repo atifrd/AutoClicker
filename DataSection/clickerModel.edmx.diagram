@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2e2f3e2ffb0f475fa4ec310b4756d6b7" Name="Diagram1" ZoomLevel="69">
+        <EntityTypeShape EntityType="AutoClickDBModel.aspnet_Applications" Width="1.5" PointX="0.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoClickDBModel.aspnet_Membership" Width="1.5" PointX="3" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoClickDBModel.aspnet_Paths" Width="1.5" PointX="3" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoClickDBModel.aspnet_PersonalizationAllUsers" Width="1.5" PointX="5.25" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoClickDBModel.aspnet_PersonalizationPerUser" Width="1.5" PointX="5.25" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoClickDBModel.aspnet_Profile" Width="1.5" PointX="7.5" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoClickDBModel.aspnet_Roles" Width="1.5" PointX="3" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoClickDBModel.aspnet_SchemaVersions" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoClickDBModel.aspnet_Users" Width="1.5" PointX="5.25" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoClickDBModel.aspnet_WebEvent_Events" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoClickDBModel.BarCodeData" Width="1.5" PointX="7.5" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoClickDBModel.Employee" Width="1.5" PointX="7.5" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoClickDBModel.FileClass" Width="1.5" PointX="7.5" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoClickDBModel.FilesDirectory" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoClickDBModel.Menu" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoClickDBModel.sysdiagram" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoClickDBModel.UserControlInRole" Width="1.5" PointX="5.25" PointY="29.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoClickDBModel.UserControl" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoClickDBModel.UserTracking" Width="1.5" PointX="7.5" PointY="19.75" IsExpanded="true" />
+        <AssociationConnector Association="AutoClickDBModel.FK__aspnet_Me__Appli__7F2BE32F" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoClickDBModel.FK__aspnet_Pa__Appli__01142BA1" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoClickDBModel.FK__aspnet_Ro__Appli__7D439ABD" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoClickDBModel.FK__aspnet_Us__Appli__06CD04F7" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoClickDBModel.FK__aspnet_Me__UserI__00200768" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoClickDBModel.FK__aspnet_Pe__PathI__02084FDA" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoClickDBModel.FK__aspnet_Pe__PathI__02FC7413" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoClickDBModel.FK__aspnet_Pe__UserI__03F0984C" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoClickDBModel.FK__aspnet_Pr__UserI__04E4BC85" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoClickDBModel.FK_UserControlInRole_aspnet_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoClickDBModel.FK_Employee_aspnet_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoClickDBModel.FK_UserTracking_aspnet_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoClickDBModel.FK_Menu_Menu" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoClickDBModel.FK_Menu_UserControls" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoClickDBModel.aspnet_UsersInRoles" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="AutoClickDBModel.ImagesHistory" Width="1.5" PointX="9" PointY="27.375" />
+        <AssociationConnector Association="AutoClickDBModel.FK_ImagesHistory_BarCodeData" />
+        <EntityTypeShape EntityType="AutoClickDBModel.FilesINBarCode" Width="1.5" PointX="2.5279015258550182" PointY="22.59281341293492" />
+        <AssociationConnector Association="AutoClickDBModel.FK_FilesINBarCode_BarCodeData" />
+        <AssociationConnector Association="AutoClickDBModel.FK_FilesINBarCode_Employee" />
+        <AssociationConnector Association="AutoClickDBModel.FK_FilesINBarCode_FileClasses" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

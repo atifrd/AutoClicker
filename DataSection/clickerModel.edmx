@@ -1,0 +1,1501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="AutoClickDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="AutoClickDBModelStoreContainer">
+          <EntitySet Name="aspnet_Applications" EntityType="AutoClickDBModel.Store.aspnet_Applications" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Membership" EntityType="AutoClickDBModel.Store.aspnet_Membership" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Paths" EntityType="AutoClickDBModel.Store.aspnet_Paths" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_PersonalizationAllUsers" EntityType="AutoClickDBModel.Store.aspnet_PersonalizationAllUsers" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_PersonalizationPerUser" EntityType="AutoClickDBModel.Store.aspnet_PersonalizationPerUser" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Profile" EntityType="AutoClickDBModel.Store.aspnet_Profile" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Roles" EntityType="AutoClickDBModel.Store.aspnet_Roles" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_SchemaVersions" EntityType="AutoClickDBModel.Store.aspnet_SchemaVersions" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Users" EntityType="AutoClickDBModel.Store.aspnet_Users" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_UsersInRoles" EntityType="AutoClickDBModel.Store.aspnet_UsersInRoles" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_WebEvent_Events" EntityType="AutoClickDBModel.Store.aspnet_WebEvent_Events" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="BarCodeData" EntityType="AutoClickDBModel.Store.BarCodeData" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Employee" EntityType="AutoClickDBModel.Store.Employee" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="FileClasses" EntityType="AutoClickDBModel.Store.FileClasses" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="FilesDirectory" EntityType="AutoClickDBModel.Store.FilesDirectory" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="FilesINBarCode" EntityType="AutoClickDBModel.Store.FilesINBarCode" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ImagesHistory" EntityType="AutoClickDBModel.Store.ImagesHistory" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Menu" EntityType="AutoClickDBModel.Store.Menu" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="sysdiagrams" EntityType="AutoClickDBModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UserControlInRole" EntityType="AutoClickDBModel.Store.UserControlInRole" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UserControls" EntityType="AutoClickDBModel.Store.UserControls" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UserTracking" EntityType="AutoClickDBModel.Store.UserTracking" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK__aspnet_Me__Appli__7F2BE32F" Association="AutoClickDBModel.Store.FK__aspnet_Me__Appli__7F2BE32F">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Me__UserI__00200768" Association="AutoClickDBModel.Store.FK__aspnet_Me__UserI__00200768">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pa__Appli__01142BA1" Association="AutoClickDBModel.Store.FK__aspnet_Pa__Appli__01142BA1">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__PathI__02084FDA" Association="AutoClickDBModel.Store.FK__aspnet_Pe__PathI__02084FDA">
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+            <End Role="aspnet_PersonalizationAllUsers" EntitySet="aspnet_PersonalizationAllUsers" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__PathI__02FC7413" Association="AutoClickDBModel.Store.FK__aspnet_Pe__PathI__02FC7413">
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+            <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__UserI__03F0984C" Association="AutoClickDBModel.Store.FK__aspnet_Pe__UserI__03F0984C">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pr__UserI__04E4BC85" Association="AutoClickDBModel.Store.FK__aspnet_Pr__UserI__04E4BC85">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_Profile" EntitySet="aspnet_Profile" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Ro__Appli__7D439ABD" Association="AutoClickDBModel.Store.FK__aspnet_Ro__Appli__7D439ABD">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__Appli__06CD04F7" Association="AutoClickDBModel.Store.FK__aspnet_Us__Appli__06CD04F7">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__RoleI__03F0984C" Association="AutoClickDBModel.Store.FK__aspnet_Us__RoleI__03F0984C">
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+            <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__UserI__04E4BC85" Association="AutoClickDBModel.Store.FK__aspnet_Us__UserI__04E4BC85">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Employee_aspnet_Users" Association="AutoClickDBModel.Store.FK_Employee_aspnet_Users">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="Employee" EntitySet="Employee" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FilesINBarCode_BarCodeData" Association="AutoClickDBModel.Store.FK_FilesINBarCode_BarCodeData">
+            <End Role="BarCodeData" EntitySet="BarCodeData" />
+            <End Role="FilesINBarCode" EntitySet="FilesINBarCode" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FilesINBarCode_Employee" Association="AutoClickDBModel.Store.FK_FilesINBarCode_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="FilesINBarCode" EntitySet="FilesINBarCode" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FilesINBarCode_FileClasses" Association="AutoClickDBModel.Store.FK_FilesINBarCode_FileClasses">
+            <End Role="FileClasses" EntitySet="FileClasses" />
+            <End Role="FilesINBarCode" EntitySet="FilesINBarCode" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ImagesHistory_BarCodeData" Association="AutoClickDBModel.Store.FK_ImagesHistory_BarCodeData">
+            <End Role="BarCodeData" EntitySet="BarCodeData" />
+            <End Role="ImagesHistory" EntitySet="ImagesHistory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Menu_Menu" Association="AutoClickDBModel.Store.FK_Menu_Menu">
+            <End Role="Menu" EntitySet="Menu" />
+            <End Role="Menu1" EntitySet="Menu" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Menu_UserControls" Association="AutoClickDBModel.Store.FK_Menu_UserControls">
+            <End Role="UserControls" EntitySet="UserControls" />
+            <End Role="Menu" EntitySet="Menu" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserControlInRole_aspnet_Roles" Association="AutoClickDBModel.Store.FK_UserControlInRole_aspnet_Roles">
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+            <End Role="UserControlInRole" EntitySet="UserControlInRole" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserTracking_aspnet_Users" Association="AutoClickDBModel.Store.FK_UserTracking_aspnet_Users">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="UserTracking" EntitySet="UserTracking" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="aspnet_Applications">
+          <Key>
+            <PropertyRef Name="ApplicationId" />
+          </Key>
+          <Property Name="ApplicationName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredApplicationName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="aspnet_Membership">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="PasswordFormat" Type="int" Nullable="false" />
+          <Property Name="PasswordSalt" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="MobilePIN" Type="nvarchar" MaxLength="16" />
+          <Property Name="Email" Type="nvarchar" MaxLength="256" />
+          <Property Name="LoweredEmail" Type="nvarchar" MaxLength="256" />
+          <Property Name="PasswordQuestion" Type="nvarchar" MaxLength="256" />
+          <Property Name="PasswordAnswer" Type="nvarchar" MaxLength="128" />
+          <Property Name="IsApproved" Type="bit" Nullable="false" />
+          <Property Name="IsLockedOut" Type="bit" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="LastLoginDate" Type="datetime" Nullable="false" />
+          <Property Name="LastPasswordChangedDate" Type="datetime" Nullable="false" />
+          <Property Name="LastLockoutDate" Type="datetime" Nullable="false" />
+          <Property Name="FailedPasswordAttemptCount" Type="int" Nullable="false" />
+          <Property Name="FailedPasswordAttemptWindowStart" Type="datetime" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptCount" Type="int" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="datetime" Nullable="false" />
+          <Property Name="Comment" Type="ntext" />
+        </EntityType>
+        <EntityType Name="aspnet_Paths">
+          <Key>
+            <PropertyRef Name="PathId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PathId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Path" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredPath" Type="nvarchar" Nullable="false" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="aspnet_PersonalizationAllUsers">
+          <Key>
+            <PropertyRef Name="PathId" />
+          </Key>
+          <Property Name="PathId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PageSettings" Type="image" Nullable="false" />
+          <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_PersonalizationPerUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PathId" Type="uniqueidentifier" />
+          <Property Name="UserId" Type="uniqueidentifier" />
+          <Property Name="PageSettings" Type="image" Nullable="false" />
+          <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Profile">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PropertyNames" Type="ntext" Nullable="false" />
+          <Property Name="PropertyValuesString" Type="ntext" Nullable="false" />
+          <Property Name="PropertyValuesBinary" Type="image" Nullable="false" />
+          <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Roles">
+          <Key>
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredRoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="Description" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="aspnet_SchemaVersions">
+          <Key>
+            <PropertyRef Name="Feature" />
+            <PropertyRef Name="CompatibleSchemaVersion" />
+          </Key>
+          <Property Name="Feature" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="CompatibleSchemaVersion" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="IsCurrentVersion" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Users">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredUserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="MobileAlias" Type="nvarchar" MaxLength="16" />
+          <Property Name="IsAnonymous" Type="bit" Nullable="false" />
+          <Property Name="LastActivityDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_UsersInRoles">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_WebEvent_Events">
+          <Key>
+            <PropertyRef Name="EventId" />
+          </Key>
+          <Property Name="EventId" Type="char" Nullable="false" MaxLength="32" />
+          <Property Name="EventTimeUtc" Type="datetime" Nullable="false" />
+          <Property Name="EventTime" Type="datetime" Nullable="false" />
+          <Property Name="EventType" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="EventSequence" Type="decimal" Nullable="false" Precision="19" />
+          <Property Name="EventOccurrence" Type="decimal" Nullable="false" Precision="19" />
+          <Property Name="EventCode" Type="int" Nullable="false" />
+          <Property Name="EventDetailCode" Type="int" Nullable="false" />
+          <Property Name="Message" Type="nvarchar" MaxLength="1024" />
+          <Property Name="ApplicationPath" Type="nvarchar" MaxLength="256" />
+          <Property Name="ApplicationVirtualPath" Type="nvarchar" MaxLength="256" />
+          <Property Name="MachineName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="RequestUrl" Type="nvarchar" MaxLength="1024" />
+          <Property Name="ExceptionType" Type="nvarchar" MaxLength="256" />
+          <Property Name="Details" Type="ntext" />
+        </EntityType>
+        <EntityType Name="BarCodeData">
+          <Key>
+            <PropertyRef Name="کد تفضیلی" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="کلاسه" Type="nvarchar" MaxLength="255" />
+          <Property Name="کد تفضیلی" Type="float" Nullable="false" />
+          <Property Name="نام موقوفه" Type="nvarchar" MaxLength="255" />
+          <Property Name="PrintSts" Type="bit" />
+          <Property Name="PrintDate" Type="varchar" MaxLength="15" />
+          <Property Name="Lock" Type="bit" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="PersoneCode" />
+          </Key>
+          <Property Name="PersoneCode" Type="bigint" Nullable="false" />
+          <Property Name="PersonName" Type="nvarchar" MaxLength="100" />
+          <Property Name="PersonFamily" Type="nvarchar" MaxLength="100" />
+          <Property Name="PersonPost" Type="nvarchar" MaxLength="50" />
+          <Property Name="FkUserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="AllowLockFiles" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="FileClasses">
+          <Key>
+            <PropertyRef Name="ClassID" />
+          </Key>
+          <Property Name="ClassID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FileClassNameEN" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="FileClassNameFa" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="CreateDate" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="FilesDirectory">
+          <Key>
+            <PropertyRef Name="DiectoryId" />
+          </Key>
+          <Property Name="DiectoryId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SourceDirectory" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="DestinationDirectory" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="FilesINBarCode">
+          <Key>
+            <PropertyRef Name="FileId" />
+          </Key>
+          <Property Name="FileId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FK_Barcode" Type="float" Nullable="false" />
+          <Property Name="FK_FileClass" Type="int" Nullable="false" />
+          <Property Name="FileURL" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Filename" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ClassificationDateTime" Type="varchar" MaxLength="20" />
+          <Property Name="FK_PersonCodeClassification" Type="bigint" />
+          <Property Name="UploadedDateTime" Type="varchar" MaxLength="20" />
+          <Property Name="ErrorMessage" Type="nvarchar(max)" />
+          <Property Name="ClassificationDateTime_G" Type="datetime" />
+          <Property Name="UploadedDateTime_G" Type="datetime" />
+          <Property Name="ReservedFor" Type="nvarchar" MaxLength="50" />
+          <Property Name="ReservedDateTime" Type="varchar" MaxLength="20" />
+          <Property Name="ReservedDateTime_G" Type="datetime" />
+        </EntityType>
+        <EntityType Name="ImagesHistory">
+          <Key>
+            <PropertyRef Name="HistoryId" />
+          </Key>
+          <Property Name="HistoryId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FK_barcode" Type="float" Nullable="false" />
+          <Property Name="ClassificationDateTime" Type="varchar" MaxLength="20" />
+          <Property Name="SuccessfulUploadDateTime" Type="varchar" MaxLength="20" />
+          <Property Name="GlobalErrorInUploadDateTime" Type="varchar" MaxLength="20" />
+          <Property Name="GlobalErrorInUploadMessage" Type="nvarchar(max)" />
+          <Property Name="ClassificationDateTime_G" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Menu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Text" Type="nvarchar" MaxLength="500" />
+          <Property Name="UserControlId" Type="int" />
+          <Property Name="ParentId" Type="int" />
+          <Property Name="Description" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="UserControlInRole">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserControlId" Type="int" />
+          <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="UserControls">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" MaxLength="500" />
+          <Property Name="Address" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="UserTracking">
+          <Key>
+            <PropertyRef Name="LogId" />
+          </Key>
+          <Property Name="LogId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FkUserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="LogDateTime" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="LogEventName" Type="varchar" Nullable="false" MaxLength="20" />
+        </EntityType>
+        <Association Name="FK__aspnet_Me__Appli__7F2BE32F">
+          <End Role="aspnet_Applications" Type="AutoClickDBModel.Store.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="AutoClickDBModel.Store.aspnet_Membership" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Me__UserI__00200768">
+          <End Role="aspnet_Users" Type="AutoClickDBModel.Store.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="AutoClickDBModel.Store.aspnet_Membership" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pa__Appli__01142BA1">
+          <End Role="aspnet_Applications" Type="AutoClickDBModel.Store.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Paths" Type="AutoClickDBModel.Store.aspnet_Paths" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Paths">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__PathI__02084FDA">
+          <End Role="aspnet_Paths" Type="AutoClickDBModel.Store.aspnet_Paths" Multiplicity="1" />
+          <End Role="aspnet_PersonalizationAllUsers" Type="AutoClickDBModel.Store.aspnet_PersonalizationAllUsers" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Paths">
+              <PropertyRef Name="PathId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationAllUsers">
+              <PropertyRef Name="PathId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__PathI__02FC7413">
+          <End Role="aspnet_Paths" Type="AutoClickDBModel.Store.aspnet_Paths" Multiplicity="0..1" />
+          <End Role="aspnet_PersonalizationPerUser" Type="AutoClickDBModel.Store.aspnet_PersonalizationPerUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Paths">
+              <PropertyRef Name="PathId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationPerUser">
+              <PropertyRef Name="PathId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__UserI__03F0984C">
+          <End Role="aspnet_Users" Type="AutoClickDBModel.Store.aspnet_Users" Multiplicity="0..1" />
+          <End Role="aspnet_PersonalizationPerUser" Type="AutoClickDBModel.Store.aspnet_PersonalizationPerUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationPerUser">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pr__UserI__04E4BC85">
+          <End Role="aspnet_Users" Type="AutoClickDBModel.Store.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_Profile" Type="AutoClickDBModel.Store.aspnet_Profile" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_Profile">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Ro__Appli__7D439ABD">
+          <End Role="aspnet_Applications" Type="AutoClickDBModel.Store.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Roles" Type="AutoClickDBModel.Store.aspnet_Roles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Roles">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__Appli__06CD04F7">
+          <End Role="aspnet_Applications" Type="AutoClickDBModel.Store.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Users" Type="AutoClickDBModel.Store.aspnet_Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Users">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__RoleI__03F0984C">
+          <End Role="aspnet_Roles" Type="AutoClickDBModel.Store.aspnet_Roles" Multiplicity="1" />
+          <End Role="aspnet_UsersInRoles" Type="AutoClickDBModel.Store.aspnet_UsersInRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Roles">
+              <PropertyRef Name="RoleId" />
+            </Principal>
+            <Dependent Role="aspnet_UsersInRoles">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__UserI__04E4BC85">
+          <End Role="aspnet_Users" Type="AutoClickDBModel.Store.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_UsersInRoles" Type="AutoClickDBModel.Store.aspnet_UsersInRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_UsersInRoles">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Employee_aspnet_Users">
+          <End Role="aspnet_Users" Type="AutoClickDBModel.Store.aspnet_Users" Multiplicity="1" />
+          <End Role="Employee" Type="AutoClickDBModel.Store.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="FkUserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FilesINBarCode_BarCodeData">
+          <End Role="BarCodeData" Type="AutoClickDBModel.Store.BarCodeData" Multiplicity="1" />
+          <End Role="FilesINBarCode" Type="AutoClickDBModel.Store.FilesINBarCode" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BarCodeData">
+              <PropertyRef Name="کد تفضیلی" />
+            </Principal>
+            <Dependent Role="FilesINBarCode">
+              <PropertyRef Name="FK_Barcode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FilesINBarCode_Employee">
+          <End Role="Employee" Type="AutoClickDBModel.Store.Employee" Multiplicity="0..1" />
+          <End Role="FilesINBarCode" Type="AutoClickDBModel.Store.FilesINBarCode" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="PersoneCode" />
+            </Principal>
+            <Dependent Role="FilesINBarCode">
+              <PropertyRef Name="FK_PersonCodeClassification" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FilesINBarCode_FileClasses">
+          <End Role="FileClasses" Type="AutoClickDBModel.Store.FileClasses" Multiplicity="1" />
+          <End Role="FilesINBarCode" Type="AutoClickDBModel.Store.FilesINBarCode" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FileClasses">
+              <PropertyRef Name="ClassID" />
+            </Principal>
+            <Dependent Role="FilesINBarCode">
+              <PropertyRef Name="FK_FileClass" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ImagesHistory_BarCodeData">
+          <End Role="BarCodeData" Type="AutoClickDBModel.Store.BarCodeData" Multiplicity="1" />
+          <End Role="ImagesHistory" Type="AutoClickDBModel.Store.ImagesHistory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BarCodeData">
+              <PropertyRef Name="کد تفضیلی" />
+            </Principal>
+            <Dependent Role="ImagesHistory">
+              <PropertyRef Name="FK_barcode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Menu_Menu">
+          <End Role="Menu" Type="AutoClickDBModel.Store.Menu" Multiplicity="0..1" />
+          <End Role="Menu1" Type="AutoClickDBModel.Store.Menu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Menu">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Menu1">
+              <PropertyRef Name="ParentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Menu_UserControls">
+          <End Role="UserControls" Type="AutoClickDBModel.Store.UserControls" Multiplicity="0..1" />
+          <End Role="Menu" Type="AutoClickDBModel.Store.Menu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserControls">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Menu">
+              <PropertyRef Name="UserControlId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserControlInRole_aspnet_Roles">
+          <End Role="aspnet_Roles" Type="AutoClickDBModel.Store.aspnet_Roles" Multiplicity="1" />
+          <End Role="UserControlInRole" Type="AutoClickDBModel.Store.UserControlInRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Roles">
+              <PropertyRef Name="RoleId" />
+            </Principal>
+            <Dependent Role="UserControlInRole">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserTracking_aspnet_Users">
+          <End Role="aspnet_Users" Type="AutoClickDBModel.Store.aspnet_Users" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="UserTracking" Type="AutoClickDBModel.Store.UserTracking" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="UserTracking">
+              <PropertyRef Name="FkUserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AutoClickDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="AutoClickDBEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="aspnet_Applications" EntityType="AutoClickDBModel.aspnet_Applications" />
+          <EntitySet Name="aspnet_Membership" EntityType="AutoClickDBModel.aspnet_Membership" />
+          <EntitySet Name="aspnet_Paths" EntityType="AutoClickDBModel.aspnet_Paths" />
+          <EntitySet Name="aspnet_PersonalizationAllUsers" EntityType="AutoClickDBModel.aspnet_PersonalizationAllUsers" />
+          <EntitySet Name="aspnet_PersonalizationPerUser" EntityType="AutoClickDBModel.aspnet_PersonalizationPerUser" />
+          <EntitySet Name="aspnet_Profile" EntityType="AutoClickDBModel.aspnet_Profile" />
+          <EntitySet Name="aspnet_Roles" EntityType="AutoClickDBModel.aspnet_Roles" />
+          <EntitySet Name="aspnet_SchemaVersions" EntityType="AutoClickDBModel.aspnet_SchemaVersions" />
+          <EntitySet Name="aspnet_Users" EntityType="AutoClickDBModel.aspnet_Users" />
+          <EntitySet Name="aspnet_WebEvent_Events" EntityType="AutoClickDBModel.aspnet_WebEvent_Events" />
+          <EntitySet Name="BarCodeDatas" EntityType="AutoClickDBModel.BarCodeData" />
+          <EntitySet Name="Employees" EntityType="AutoClickDBModel.Employee" />
+          <EntitySet Name="FileClasses" EntityType="AutoClickDBModel.FileClass" />
+          <EntitySet Name="FilesDirectories" EntityType="AutoClickDBModel.FilesDirectory" />
+          <EntitySet Name="Menus" EntityType="AutoClickDBModel.Menu" />
+          <EntitySet Name="sysdiagrams" EntityType="AutoClickDBModel.sysdiagram" />
+          <EntitySet Name="UserControlInRoles" EntityType="AutoClickDBModel.UserControlInRole" />
+          <EntitySet Name="UserControls" EntityType="AutoClickDBModel.UserControl" />
+          <EntitySet Name="UserTrackings" EntityType="AutoClickDBModel.UserTracking" />
+          <AssociationSet Name="FK__aspnet_Me__Appli__7F2BE32F" Association="AutoClickDBModel.FK__aspnet_Me__Appli__7F2BE32F">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pa__Appli__01142BA1" Association="AutoClickDBModel.FK__aspnet_Pa__Appli__01142BA1">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Ro__Appli__7D439ABD" Association="AutoClickDBModel.FK__aspnet_Ro__Appli__7D439ABD">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__Appli__06CD04F7" Association="AutoClickDBModel.FK__aspnet_Us__Appli__06CD04F7">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Me__UserI__00200768" Association="AutoClickDBModel.FK__aspnet_Me__UserI__00200768">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__PathI__02084FDA" Association="AutoClickDBModel.FK__aspnet_Pe__PathI__02084FDA">
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+            <End Role="aspnet_PersonalizationAllUsers" EntitySet="aspnet_PersonalizationAllUsers" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__PathI__02FC7413" Association="AutoClickDBModel.FK__aspnet_Pe__PathI__02FC7413">
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+            <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__UserI__03F0984C" Association="AutoClickDBModel.FK__aspnet_Pe__UserI__03F0984C">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pr__UserI__04E4BC85" Association="AutoClickDBModel.FK__aspnet_Pr__UserI__04E4BC85">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_Profile" EntitySet="aspnet_Profile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserControlInRole_aspnet_Roles" Association="AutoClickDBModel.FK_UserControlInRole_aspnet_Roles">
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+            <End Role="UserControlInRole" EntitySet="UserControlInRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Employee_aspnet_Users" Association="AutoClickDBModel.FK_Employee_aspnet_Users">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="Employee" EntitySet="Employees" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserTracking_aspnet_Users" Association="AutoClickDBModel.FK_UserTracking_aspnet_Users">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="UserTracking" EntitySet="UserTrackings" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Menu_Menu" Association="AutoClickDBModel.FK_Menu_Menu">
+            <End Role="Menu" EntitySet="Menus" />
+            <End Role="Menu1" EntitySet="Menus" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Menu_UserControls" Association="AutoClickDBModel.FK_Menu_UserControls">
+            <End Role="UserControls" EntitySet="UserControls" />
+            <End Role="Menu" EntitySet="Menus" />
+          </AssociationSet>
+          <AssociationSet Name="aspnet_UsersInRoles" Association="AutoClickDBModel.aspnet_UsersInRoles">
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+          </AssociationSet>
+          <EntitySet Name="ImagesHistories" EntityType="AutoClickDBModel.ImagesHistory" />
+          <AssociationSet Name="FK_ImagesHistory_BarCodeData" Association="AutoClickDBModel.FK_ImagesHistory_BarCodeData">
+            <End Role="BarCodeData" EntitySet="BarCodeDatas" />
+            <End Role="ImagesHistory" EntitySet="ImagesHistories" />
+          </AssociationSet>
+          <EntitySet Name="FilesINBarCodes" EntityType="AutoClickDBModel.FilesINBarCode" />
+          <AssociationSet Name="FK_FilesINBarCode_BarCodeData" Association="AutoClickDBModel.FK_FilesINBarCode_BarCodeData">
+            <End Role="BarCodeData" EntitySet="BarCodeDatas" />
+            <End Role="FilesINBarCode" EntitySet="FilesINBarCodes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FilesINBarCode_Employee" Association="AutoClickDBModel.FK_FilesINBarCode_Employee">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="FilesINBarCode" EntitySet="FilesINBarCodes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FilesINBarCode_FileClasses" Association="AutoClickDBModel.FK_FilesINBarCode_FileClasses">
+            <End Role="FileClass" EntitySet="FileClasses" />
+            <End Role="FilesINBarCode" EntitySet="FilesINBarCodes" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="aspnet_Applications">
+          <Key>
+            <PropertyRef Name="ApplicationId" />
+          </Key>
+          <Property Name="ApplicationName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredApplicationName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Membership" Relationship="AutoClickDBModel.FK__aspnet_Me__Appli__7F2BE32F" FromRole="aspnet_Applications" ToRole="aspnet_Membership" />
+          <NavigationProperty Name="aspnet_Paths" Relationship="AutoClickDBModel.FK__aspnet_Pa__Appli__01142BA1" FromRole="aspnet_Applications" ToRole="aspnet_Paths" />
+          <NavigationProperty Name="aspnet_Roles" Relationship="AutoClickDBModel.FK__aspnet_Ro__Appli__7D439ABD" FromRole="aspnet_Applications" ToRole="aspnet_Roles" />
+          <NavigationProperty Name="aspnet_Users" Relationship="AutoClickDBModel.FK__aspnet_Us__Appli__06CD04F7" FromRole="aspnet_Applications" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_Membership">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="PasswordFormat" Type="Int32" Nullable="false" />
+          <Property Name="PasswordSalt" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="MobilePIN" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredEmail" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="PasswordQuestion" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="PasswordAnswer" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="IsApproved" Type="Boolean" Nullable="false" />
+          <Property Name="IsLockedOut" Type="Boolean" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastLoginDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastPasswordChangedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastLockoutDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FailedPasswordAttemptCount" Type="Int32" Nullable="false" />
+          <Property Name="FailedPasswordAttemptWindowStart" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FailedPasswordAnswerAttemptCount" Type="Int32" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Comment" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Applications" Relationship="AutoClickDBModel.FK__aspnet_Me__Appli__7F2BE32F" FromRole="aspnet_Membership" ToRole="aspnet_Applications" />
+          <NavigationProperty Name="aspnet_Users" Relationship="AutoClickDBModel.FK__aspnet_Me__UserI__00200768" FromRole="aspnet_Membership" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_Paths">
+          <Key>
+            <PropertyRef Name="PathId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="PathId" Type="Guid" Nullable="false" />
+          <Property Name="Path" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredPath" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Applications" Relationship="AutoClickDBModel.FK__aspnet_Pa__Appli__01142BA1" FromRole="aspnet_Paths" ToRole="aspnet_Applications" />
+          <NavigationProperty Name="aspnet_PersonalizationAllUsers" Relationship="AutoClickDBModel.FK__aspnet_Pe__PathI__02084FDA" FromRole="aspnet_Paths" ToRole="aspnet_PersonalizationAllUsers" />
+          <NavigationProperty Name="aspnet_PersonalizationPerUser" Relationship="AutoClickDBModel.FK__aspnet_Pe__PathI__02FC7413" FromRole="aspnet_Paths" ToRole="aspnet_PersonalizationPerUser" />
+        </EntityType>
+        <EntityType Name="aspnet_PersonalizationAllUsers">
+          <Key>
+            <PropertyRef Name="PathId" />
+          </Key>
+          <Property Name="PathId" Type="Guid" Nullable="false" />
+          <Property Name="PageSettings" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="aspnet_Paths" Relationship="AutoClickDBModel.FK__aspnet_Pe__PathI__02084FDA" FromRole="aspnet_PersonalizationAllUsers" ToRole="aspnet_Paths" />
+        </EntityType>
+        <EntityType Name="aspnet_PersonalizationPerUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="PathId" Type="Guid" />
+          <Property Name="UserId" Type="Guid" />
+          <Property Name="PageSettings" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="aspnet_Paths" Relationship="AutoClickDBModel.FK__aspnet_Pe__PathI__02FC7413" FromRole="aspnet_PersonalizationPerUser" ToRole="aspnet_Paths" />
+          <NavigationProperty Name="aspnet_Users" Relationship="AutoClickDBModel.FK__aspnet_Pe__UserI__03F0984C" FromRole="aspnet_PersonalizationPerUser" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_Profile">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="PropertyNames" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="PropertyValuesString" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="PropertyValuesBinary" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="aspnet_Users" Relationship="AutoClickDBModel.FK__aspnet_Pr__UserI__04E4BC85" FromRole="aspnet_Profile" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_Roles">
+          <Key>
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="RoleId" Type="Guid" Nullable="false" />
+          <Property Name="RoleName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredRoleName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Applications" Relationship="AutoClickDBModel.FK__aspnet_Ro__Appli__7D439ABD" FromRole="aspnet_Roles" ToRole="aspnet_Applications" />
+          <NavigationProperty Name="UserControlInRoles" Relationship="AutoClickDBModel.FK_UserControlInRole_aspnet_Roles" FromRole="aspnet_Roles" ToRole="UserControlInRole" />
+          <NavigationProperty Name="aspnet_Users" Relationship="AutoClickDBModel.aspnet_UsersInRoles" FromRole="aspnet_Roles" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_SchemaVersions">
+          <Key>
+            <PropertyRef Name="Feature" />
+            <PropertyRef Name="CompatibleSchemaVersion" />
+          </Key>
+          <Property Name="Feature" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="CompatibleSchemaVersion" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="IsCurrentVersion" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Users">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredUserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="MobileAlias" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+          <Property Name="IsAnonymous" Type="Boolean" Nullable="false" />
+          <Property Name="LastActivityDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="aspnet_Applications" Relationship="AutoClickDBModel.FK__aspnet_Us__Appli__06CD04F7" FromRole="aspnet_Users" ToRole="aspnet_Applications" />
+          <NavigationProperty Name="aspnet_Membership" Relationship="AutoClickDBModel.FK__aspnet_Me__UserI__00200768" FromRole="aspnet_Users" ToRole="aspnet_Membership" />
+          <NavigationProperty Name="aspnet_PersonalizationPerUser" Relationship="AutoClickDBModel.FK__aspnet_Pe__UserI__03F0984C" FromRole="aspnet_Users" ToRole="aspnet_PersonalizationPerUser" />
+          <NavigationProperty Name="aspnet_Profile" Relationship="AutoClickDBModel.FK__aspnet_Pr__UserI__04E4BC85" FromRole="aspnet_Users" ToRole="aspnet_Profile" />
+          <NavigationProperty Name="Employees" Relationship="AutoClickDBModel.FK_Employee_aspnet_Users" FromRole="aspnet_Users" ToRole="Employee" />
+          <NavigationProperty Name="UserTrackings" Relationship="AutoClickDBModel.FK_UserTracking_aspnet_Users" FromRole="aspnet_Users" ToRole="UserTracking" />
+          <NavigationProperty Name="aspnet_Roles" Relationship="AutoClickDBModel.aspnet_UsersInRoles" FromRole="aspnet_Users" ToRole="aspnet_Roles" />
+        </EntityType>
+        <EntityType Name="aspnet_WebEvent_Events">
+          <Key>
+            <PropertyRef Name="EventId" />
+          </Key>
+          <Property Name="EventId" Type="String" Nullable="false" MaxLength="32" Unicode="false" FixedLength="true" />
+          <Property Name="EventTimeUtc" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EventTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EventType" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="EventSequence" Type="Decimal" Nullable="false" Precision="19" Scale="0" />
+          <Property Name="EventOccurrence" Type="Decimal" Nullable="false" Precision="19" Scale="0" />
+          <Property Name="EventCode" Type="Int32" Nullable="false" />
+          <Property Name="EventDetailCode" Type="Int32" Nullable="false" />
+          <Property Name="Message" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+          <Property Name="ApplicationPath" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="ApplicationVirtualPath" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="MachineName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="RequestUrl" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+          <Property Name="ExceptionType" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="Details" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="BarCodeData">
+          <Key>
+            <PropertyRef Name="کد_تفضیلی" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="کلاسه" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="کد_تفضیلی" Type="Double" Nullable="false" />
+          <Property Name="نام_موقوفه" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="PrintSts" Type="Boolean" />
+          <Property Name="PrintDate" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="Lock" Type="Boolean" />
+          <NavigationProperty Name="ImagesHistories" Relationship="AutoClickDBModel.FK_ImagesHistory_BarCodeData" FromRole="BarCodeData" ToRole="ImagesHistory" />
+          <NavigationProperty Name="FilesINBarCodes" Relationship="AutoClickDBModel.FK_FilesINBarCode_BarCodeData" FromRole="BarCodeData" ToRole="FilesINBarCode" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="PersoneCode" />
+          </Key>
+          <Property Name="PersoneCode" Type="Int64" Nullable="false" />
+          <Property Name="PersonName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="PersonFamily" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="PersonPost" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="FkUserId" Type="Guid" Nullable="false" />
+          <Property Name="AllowLockFiles" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="aspnet_Users" Relationship="AutoClickDBModel.FK_Employee_aspnet_Users" FromRole="Employee" ToRole="aspnet_Users" />
+          <NavigationProperty Name="FilesINBarCodes" Relationship="AutoClickDBModel.FK_FilesINBarCode_Employee" FromRole="Employee" ToRole="FilesINBarCode" />
+        </EntityType>
+        <EntityType Name="FileClass">
+          <Key>
+            <PropertyRef Name="ClassID" />
+          </Key>
+          <Property Name="ClassID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="FileClassNameEN" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="FileClassNameFa" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="CreateDate" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="FilesINBarCodes" Relationship="AutoClickDBModel.FK_FilesINBarCode_FileClasses" FromRole="FileClass" ToRole="FilesINBarCode" />
+        </EntityType>
+        <EntityType Name="FilesDirectory">
+          <Key>
+            <PropertyRef Name="DiectoryId" />
+          </Key>
+          <Property Name="DiectoryId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="SourceDirectory" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="DestinationDirectory" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Menu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Text" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="UserControlId" Type="Int32" />
+          <Property Name="ParentId" Type="Int32" />
+          <Property Name="Description" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Menu1" Relationship="AutoClickDBModel.FK_Menu_Menu" FromRole="Menu" ToRole="Menu1" />
+          <NavigationProperty Name="Menu2" Relationship="AutoClickDBModel.FK_Menu_Menu" FromRole="Menu1" ToRole="Menu" />
+          <NavigationProperty Name="UserControl" Relationship="AutoClickDBModel.FK_Menu_UserControls" FromRole="Menu" ToRole="UserControls" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="UserControlInRole">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="UserControlId" Type="Int32" />
+          <Property Name="RoleId" Type="Guid" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Roles" Relationship="AutoClickDBModel.FK_UserControlInRole_aspnet_Roles" FromRole="UserControlInRole" ToRole="aspnet_Roles" />
+        </EntityType>
+        <EntityType Name="UserControl">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="Address" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Menus" Relationship="AutoClickDBModel.FK_Menu_UserControls" FromRole="UserControls" ToRole="Menu" />
+        </EntityType>
+        <EntityType Name="UserTracking">
+          <Key>
+            <PropertyRef Name="LogId" />
+          </Key>
+          <Property Name="LogId" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="FkUserId" Type="Guid" Nullable="false" />
+          <Property Name="LogDateTime" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="LogEventName" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Users" Relationship="AutoClickDBModel.FK_UserTracking_aspnet_Users" FromRole="UserTracking" ToRole="aspnet_Users" />
+        </EntityType>
+        <Association Name="FK__aspnet_Me__Appli__7F2BE32F">
+          <End Role="aspnet_Applications" Type="AutoClickDBModel.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="AutoClickDBModel.aspnet_Membership" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pa__Appli__01142BA1">
+          <End Role="aspnet_Applications" Type="AutoClickDBModel.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Paths" Type="AutoClickDBModel.aspnet_Paths" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Paths">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Ro__Appli__7D439ABD">
+          <End Role="aspnet_Applications" Type="AutoClickDBModel.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Roles" Type="AutoClickDBModel.aspnet_Roles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Roles">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__Appli__06CD04F7">
+          <End Role="aspnet_Applications" Type="AutoClickDBModel.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Users" Type="AutoClickDBModel.aspnet_Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Users">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Me__UserI__00200768">
+          <End Role="aspnet_Users" Type="AutoClickDBModel.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="AutoClickDBModel.aspnet_Membership" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__PathI__02084FDA">
+          <End Role="aspnet_Paths" Type="AutoClickDBModel.aspnet_Paths" Multiplicity="1" />
+          <End Role="aspnet_PersonalizationAllUsers" Type="AutoClickDBModel.aspnet_PersonalizationAllUsers" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Paths">
+              <PropertyRef Name="PathId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationAllUsers">
+              <PropertyRef Name="PathId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__PathI__02FC7413">
+          <End Role="aspnet_Paths" Type="AutoClickDBModel.aspnet_Paths" Multiplicity="0..1" />
+          <End Role="aspnet_PersonalizationPerUser" Type="AutoClickDBModel.aspnet_PersonalizationPerUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Paths">
+              <PropertyRef Name="PathId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationPerUser">
+              <PropertyRef Name="PathId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__UserI__03F0984C">
+          <End Role="aspnet_Users" Type="AutoClickDBModel.aspnet_Users" Multiplicity="0..1" />
+          <End Role="aspnet_PersonalizationPerUser" Type="AutoClickDBModel.aspnet_PersonalizationPerUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationPerUser">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pr__UserI__04E4BC85">
+          <End Role="aspnet_Users" Type="AutoClickDBModel.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_Profile" Type="AutoClickDBModel.aspnet_Profile" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_Profile">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserControlInRole_aspnet_Roles">
+          <End Role="aspnet_Roles" Type="AutoClickDBModel.aspnet_Roles" Multiplicity="1" />
+          <End Role="UserControlInRole" Type="AutoClickDBModel.UserControlInRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Roles">
+              <PropertyRef Name="RoleId" />
+            </Principal>
+            <Dependent Role="UserControlInRole">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Employee_aspnet_Users">
+          <End Role="aspnet_Users" Type="AutoClickDBModel.aspnet_Users" Multiplicity="1" />
+          <End Role="Employee" Type="AutoClickDBModel.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="FkUserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserTracking_aspnet_Users">
+          <End Role="aspnet_Users" Type="AutoClickDBModel.aspnet_Users" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="UserTracking" Type="AutoClickDBModel.UserTracking" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="UserTracking">
+              <PropertyRef Name="FkUserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Menu_Menu">
+          <End Role="Menu" Type="AutoClickDBModel.Menu" Multiplicity="0..1" />
+          <End Role="Menu1" Type="AutoClickDBModel.Menu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Menu">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Menu1">
+              <PropertyRef Name="ParentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Menu_UserControls">
+          <End Role="UserControls" Type="AutoClickDBModel.UserControl" Multiplicity="0..1" />
+          <End Role="Menu" Type="AutoClickDBModel.Menu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserControls">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Menu">
+              <PropertyRef Name="UserControlId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="aspnet_UsersInRoles">
+          <End Role="aspnet_Roles" Type="AutoClickDBModel.aspnet_Roles" Multiplicity="*" />
+          <End Role="aspnet_Users" Type="AutoClickDBModel.aspnet_Users" Multiplicity="*" />
+        </Association>
+        <EntityType Name="ImagesHistory">
+          <Key>
+            <PropertyRef Name="HistoryId" />
+          </Key>
+          <Property Type="Int64" Name="HistoryId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Double" Name="FK_barcode" Nullable="false" />
+          <Property Type="String" Name="ClassificationDateTime" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SuccessfulUploadDateTime" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="GlobalErrorInUploadDateTime" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="GlobalErrorInUploadMessage" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="ClassificationDateTime_G" Precision="3" />
+          <NavigationProperty Name="BarCodeData" Relationship="AutoClickDBModel.FK_ImagesHistory_BarCodeData" FromRole="ImagesHistory" ToRole="BarCodeData" />
+        </EntityType>
+        <Association Name="FK_ImagesHistory_BarCodeData">
+          <End Type="AutoClickDBModel.BarCodeData" Role="BarCodeData" Multiplicity="1" />
+          <End Type="AutoClickDBModel.ImagesHistory" Role="ImagesHistory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BarCodeData">
+              <PropertyRef Name="کد_تفضیلی" />
+            </Principal>
+            <Dependent Role="ImagesHistory">
+              <PropertyRef Name="FK_barcode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="FilesINBarCode">
+          <Key>
+            <PropertyRef Name="FileId" />
+          </Key>
+          <Property Type="Int64" Name="FileId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Double" Name="FK_Barcode" Nullable="false" />
+          <Property Type="Int32" Name="FK_FileClass" Nullable="false" />
+          <Property Type="String" Name="FileURL" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Filename" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ClassificationDateTime" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="FK_PersonCodeClassification" />
+          <Property Type="String" Name="UploadedDateTime" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ErrorMessage" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="ClassificationDateTime_G" Precision="3" />
+          <Property Type="DateTime" Name="UploadedDateTime_G" Precision="3" />
+          <Property Type="String" Name="ReservedFor" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ReservedDateTime" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="ReservedDateTime_G" Precision="3" />
+          <NavigationProperty Name="BarCodeData" Relationship="AutoClickDBModel.FK_FilesINBarCode_BarCodeData" FromRole="FilesINBarCode" ToRole="BarCodeData" />
+          <NavigationProperty Name="Employee" Relationship="AutoClickDBModel.FK_FilesINBarCode_Employee" FromRole="FilesINBarCode" ToRole="Employee" />
+          <NavigationProperty Name="FileClass" Relationship="AutoClickDBModel.FK_FilesINBarCode_FileClasses" FromRole="FilesINBarCode" ToRole="FileClass" />
+        </EntityType>
+        <Association Name="FK_FilesINBarCode_BarCodeData">
+          <End Type="AutoClickDBModel.BarCodeData" Role="BarCodeData" Multiplicity="1" />
+          <End Type="AutoClickDBModel.FilesINBarCode" Role="FilesINBarCode" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BarCodeData">
+              <PropertyRef Name="کد_تفضیلی" />
+            </Principal>
+            <Dependent Role="FilesINBarCode">
+              <PropertyRef Name="FK_Barcode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FilesINBarCode_Employee">
+          <End Type="AutoClickDBModel.Employee" Role="Employee" Multiplicity="0..1" />
+          <End Type="AutoClickDBModel.FilesINBarCode" Role="FilesINBarCode" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="PersoneCode" />
+            </Principal>
+            <Dependent Role="FilesINBarCode">
+              <PropertyRef Name="FK_PersonCodeClassification" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FilesINBarCode_FileClasses">
+          <End Type="AutoClickDBModel.FileClass" Role="FileClass" Multiplicity="1" />
+          <End Type="AutoClickDBModel.FilesINBarCode" Role="FilesINBarCode" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FileClass">
+              <PropertyRef Name="ClassID" />
+            </Principal>
+            <Dependent Role="FilesINBarCode">
+              <PropertyRef Name="FK_FileClass" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AutoClickDBModelStoreContainer" CdmEntityContainer="AutoClickDBEntities">
+          <EntitySetMapping Name="aspnet_Applications">
+            <EntityTypeMapping TypeName="AutoClickDBModel.aspnet_Applications">
+              <MappingFragment StoreEntitySet="aspnet_Applications">
+                <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+                <ScalarProperty Name="LoweredApplicationName" ColumnName="LoweredApplicationName" />
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Membership">
+            <EntityTypeMapping TypeName="AutoClickDBModel.aspnet_Membership">
+              <MappingFragment StoreEntitySet="aspnet_Membership">
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="PasswordFormat" ColumnName="PasswordFormat" />
+                <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+                <ScalarProperty Name="MobilePIN" ColumnName="MobilePIN" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="LoweredEmail" ColumnName="LoweredEmail" />
+                <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+                <ScalarProperty Name="PasswordAnswer" ColumnName="PasswordAnswer" />
+                <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+                <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+                <ScalarProperty Name="LastPasswordChangedDate" ColumnName="LastPasswordChangedDate" />
+                <ScalarProperty Name="LastLockoutDate" ColumnName="LastLockoutDate" />
+                <ScalarProperty Name="FailedPasswordAttemptCount" ColumnName="FailedPasswordAttemptCount" />
+                <ScalarProperty Name="FailedPasswordAttemptWindowStart" ColumnName="FailedPasswordAttemptWindowStart" />
+                <ScalarProperty Name="FailedPasswordAnswerAttemptCount" ColumnName="FailedPasswordAnswerAttemptCount" />
+                <ScalarProperty Name="FailedPasswordAnswerAttemptWindowStart" ColumnName="FailedPasswordAnswerAttemptWindowStart" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Paths">
+            <EntityTypeMapping TypeName="AutoClickDBModel.aspnet_Paths">
+              <MappingFragment StoreEntitySet="aspnet_Paths">
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="PathId" ColumnName="PathId" />
+                <ScalarProperty Name="Path" ColumnName="Path" />
+                <ScalarProperty Name="LoweredPath" ColumnName="LoweredPath" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_PersonalizationAllUsers">
+            <EntityTypeMapping TypeName="AutoClickDBModel.aspnet_PersonalizationAllUsers">
+              <MappingFragment StoreEntitySet="aspnet_PersonalizationAllUsers">
+                <ScalarProperty Name="PathId" ColumnName="PathId" />
+                <ScalarProperty Name="PageSettings" ColumnName="PageSettings" />
+                <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_PersonalizationPerUser">
+            <EntityTypeMapping TypeName="AutoClickDBModel.aspnet_PersonalizationPerUser">
+              <MappingFragment StoreEntitySet="aspnet_PersonalizationPerUser">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PathId" ColumnName="PathId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="PageSettings" ColumnName="PageSettings" />
+                <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Profile">
+            <EntityTypeMapping TypeName="AutoClickDBModel.aspnet_Profile">
+              <MappingFragment StoreEntitySet="aspnet_Profile">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="PropertyNames" ColumnName="PropertyNames" />
+                <ScalarProperty Name="PropertyValuesString" ColumnName="PropertyValuesString" />
+                <ScalarProperty Name="PropertyValuesBinary" ColumnName="PropertyValuesBinary" />
+                <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Roles">
+            <EntityTypeMapping TypeName="AutoClickDBModel.aspnet_Roles">
+              <MappingFragment StoreEntitySet="aspnet_Roles">
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+                <ScalarProperty Name="LoweredRoleName" ColumnName="LoweredRoleName" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_SchemaVersions">
+            <EntityTypeMapping TypeName="AutoClickDBModel.aspnet_SchemaVersions">
+              <MappingFragment StoreEntitySet="aspnet_SchemaVersions">
+                <ScalarProperty Name="Feature" ColumnName="Feature" />
+                <ScalarProperty Name="CompatibleSchemaVersion" ColumnName="CompatibleSchemaVersion" />
+                <ScalarProperty Name="IsCurrentVersion" ColumnName="IsCurrentVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Users">
+            <EntityTypeMapping TypeName="AutoClickDBModel.aspnet_Users">
+              <MappingFragment StoreEntitySet="aspnet_Users">
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="LoweredUserName" ColumnName="LoweredUserName" />
+                <ScalarProperty Name="MobileAlias" ColumnName="MobileAlias" />
+                <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+                <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_WebEvent_Events">
+            <EntityTypeMapping TypeName="AutoClickDBModel.aspnet_WebEvent_Events">
+              <MappingFragment StoreEntitySet="aspnet_WebEvent_Events">
+                <ScalarProperty Name="EventId" ColumnName="EventId" />
+                <ScalarProperty Name="EventTimeUtc" ColumnName="EventTimeUtc" />
+                <ScalarProperty Name="EventTime" ColumnName="EventTime" />
+                <ScalarProperty Name="EventType" ColumnName="EventType" />
+                <ScalarProperty Name="EventSequence" ColumnName="EventSequence" />
+                <ScalarProperty Name="EventOccurrence" ColumnName="EventOccurrence" />
+                <ScalarProperty Name="EventCode" ColumnName="EventCode" />
+                <ScalarProperty Name="EventDetailCode" ColumnName="EventDetailCode" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="ApplicationPath" ColumnName="ApplicationPath" />
+                <ScalarProperty Name="ApplicationVirtualPath" ColumnName="ApplicationVirtualPath" />
+                <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+                <ScalarProperty Name="RequestUrl" ColumnName="RequestUrl" />
+                <ScalarProperty Name="ExceptionType" ColumnName="ExceptionType" />
+                <ScalarProperty Name="Details" ColumnName="Details" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BarCodeDatas">
+            <EntityTypeMapping TypeName="AutoClickDBModel.BarCodeData">
+              <MappingFragment StoreEntitySet="BarCodeData">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="کلاسه" ColumnName="کلاسه" />
+                <ScalarProperty Name="کد_تفضیلی" ColumnName="کد تفضیلی" />
+                <ScalarProperty Name="نام_موقوفه" ColumnName="نام موقوفه" />
+                <ScalarProperty Name="PrintSts" ColumnName="PrintSts" />
+                <ScalarProperty Name="PrintDate" ColumnName="PrintDate" />
+                <ScalarProperty Name="Lock" ColumnName="Lock" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="AutoClickDBModel.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="PersoneCode" ColumnName="PersoneCode" />
+                <ScalarProperty Name="PersonName" ColumnName="PersonName" />
+                <ScalarProperty Name="PersonFamily" ColumnName="PersonFamily" />
+                <ScalarProperty Name="PersonPost" ColumnName="PersonPost" />
+                <ScalarProperty Name="FkUserId" ColumnName="FkUserId" />
+                <ScalarProperty Name="AllowLockFiles" ColumnName="AllowLockFiles" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FileClasses">
+            <EntityTypeMapping TypeName="AutoClickDBModel.FileClass">
+              <MappingFragment StoreEntitySet="FileClasses">
+                <ScalarProperty Name="ClassID" ColumnName="ClassID" />
+                <ScalarProperty Name="FileClassNameEN" ColumnName="FileClassNameEN" />
+                <ScalarProperty Name="FileClassNameFa" ColumnName="FileClassNameFa" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FilesDirectories">
+            <EntityTypeMapping TypeName="AutoClickDBModel.FilesDirectory">
+              <MappingFragment StoreEntitySet="FilesDirectory">
+                <ScalarProperty Name="DiectoryId" ColumnName="DiectoryId" />
+                <ScalarProperty Name="SourceDirectory" ColumnName="SourceDirectory" />
+                <ScalarProperty Name="DestinationDirectory" ColumnName="DestinationDirectory" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Menus">
+            <EntityTypeMapping TypeName="AutoClickDBModel.Menu">
+              <MappingFragment StoreEntitySet="Menu">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Text" ColumnName="Text" />
+                <ScalarProperty Name="UserControlId" ColumnName="UserControlId" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="AutoClickDBModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserControlInRoles">
+            <EntityTypeMapping TypeName="AutoClickDBModel.UserControlInRole">
+              <MappingFragment StoreEntitySet="UserControlInRole">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="UserControlId" ColumnName="UserControlId" />
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserControls">
+            <EntityTypeMapping TypeName="AutoClickDBModel.UserControl">
+              <MappingFragment StoreEntitySet="UserControls">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserTrackings">
+            <EntityTypeMapping TypeName="AutoClickDBModel.UserTracking">
+              <MappingFragment StoreEntitySet="UserTracking">
+                <ScalarProperty Name="LogId" ColumnName="LogId" />
+                <ScalarProperty Name="FkUserId" ColumnName="FkUserId" />
+                <ScalarProperty Name="LogDateTime" ColumnName="LogDateTime" />
+                <ScalarProperty Name="LogEventName" ColumnName="LogEventName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="aspnet_UsersInRoles" TypeName="AutoClickDBModel.aspnet_UsersInRoles" StoreEntitySet="aspnet_UsersInRoles">
+            <EndProperty Name="aspnet_Roles">
+              <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+            </EndProperty>
+            <EndProperty Name="aspnet_Users">
+              <ScalarProperty Name="UserId" ColumnName="UserId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <EntitySetMapping Name="ImagesHistories">
+            <EntityTypeMapping TypeName="AutoClickDBModel.ImagesHistory">
+              <MappingFragment StoreEntitySet="ImagesHistory">
+                <ScalarProperty Name="ClassificationDateTime_G" ColumnName="ClassificationDateTime_G" />
+                <ScalarProperty Name="GlobalErrorInUploadMessage" ColumnName="GlobalErrorInUploadMessage" />
+                <ScalarProperty Name="GlobalErrorInUploadDateTime" ColumnName="GlobalErrorInUploadDateTime" />
+                <ScalarProperty Name="SuccessfulUploadDateTime" ColumnName="SuccessfulUploadDateTime" />
+                <ScalarProperty Name="ClassificationDateTime" ColumnName="ClassificationDateTime" />
+                <ScalarProperty Name="FK_barcode" ColumnName="FK_barcode" />
+                <ScalarProperty Name="HistoryId" ColumnName="HistoryId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FilesINBarCodes">
+            <EntityTypeMapping TypeName="AutoClickDBModel.FilesINBarCode">
+              <MappingFragment StoreEntitySet="FilesINBarCode">
+                <ScalarProperty Name="ReservedDateTime_G" ColumnName="ReservedDateTime_G" />
+                <ScalarProperty Name="ReservedDateTime" ColumnName="ReservedDateTime" />
+                <ScalarProperty Name="ReservedFor" ColumnName="ReservedFor" />
+                <ScalarProperty Name="UploadedDateTime_G" ColumnName="UploadedDateTime_G" />
+                <ScalarProperty Name="ClassificationDateTime_G" ColumnName="ClassificationDateTime_G" />
+                <ScalarProperty Name="ErrorMessage" ColumnName="ErrorMessage" />
+                <ScalarProperty Name="UploadedDateTime" ColumnName="UploadedDateTime" />
+                <ScalarProperty Name="FK_PersonCodeClassification" ColumnName="FK_PersonCodeClassification" />
+                <ScalarProperty Name="ClassificationDateTime" ColumnName="ClassificationDateTime" />
+                <ScalarProperty Name="Filename" ColumnName="Filename" />
+                <ScalarProperty Name="FileURL" ColumnName="FileURL" />
+                <ScalarProperty Name="FK_FileClass" ColumnName="FK_FileClass" />
+                <ScalarProperty Name="FK_Barcode" ColumnName="FK_Barcode" />
+                <ScalarProperty Name="FileId" ColumnName="FileId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
